@@ -7,6 +7,7 @@ app.config['DEBUG'] = True
 @app.route("/", methods = ['POST', 'GET'])
 def weather_api_call():
     if request.method == 'POST':
+        #tries to construct and pass a WeatherData instance to 'index.html'
         try:
             city_name = request.form["city_name"]
             city_data = build_weather_data(city_name)

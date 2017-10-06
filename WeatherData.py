@@ -1,3 +1,7 @@
+"""
+Instances of WeatherData class hold city name, description, and temperature 
+for individual cities after the information is retrieved from Open Weather Map API calls.
+"""
 class WeatherData:
 
     def __init__ (self, city_name, description):
